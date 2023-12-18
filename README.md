@@ -1,4 +1,4 @@
-## verifier-bot
+## ts-discord-bot
 
 Discord bot made in Discord.js, Typescript. Includes a development Docker container connected to a volume to test connecting to a MySQL database.
 
