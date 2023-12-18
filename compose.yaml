@@ -1,0 +1,16 @@
+services:
+
+  db:
+    container_name: verifierdb
+    image: mysql
+    restart: on-failure
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: DevDatabase
+    ports:
+      - 3306:3306
+    volumes:
+      - verifierdata:/var/lib/mysql
+
+volumes:
+  verifierdata:
