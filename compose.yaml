@@ -1,16 +1,15 @@
 services:
-
   db:
-    container_name: verifierdb
+    container_name: botdata
     image: mysql
     restart: on-failure
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: DevDatabase
+      MYSQL_DATABASE: botdb
     ports:
       - 3306:3306
     volumes:
-      - verifierdata:/var/lib/mysql
+      - botdata:/var/lib/mysql
 
 volumes:
-  verifierdata:
+  botdata:
